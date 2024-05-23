@@ -1,13 +1,15 @@
+  INF Binaries/marble//XBLCore/XBLCore.inf
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   INF Binaries/marble/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
 
-  INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
-  INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+  INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/RscRtDxe.inf
+  INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/SCHandlerRtDxe.inf
   INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
   INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
   INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  INF Binaries/marble//Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
 
   INF Binaries/marble/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
   INF Binaries/marble/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
@@ -15,9 +17,9 @@
 
   INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
   INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
-  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+  INF Binaries/marble//Drivers/VariableDxe/VariableDxe.inf
   INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
-  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+  INF Binaries/marble//Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
@@ -33,6 +35,7 @@
   INF Binaries/marble/QcomPkg/Drivers/IPCCDxe/IPCCDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/GLinkDxe/GLinkDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
+  INF Binaries/marble//Drivers/ProjectInfoDxe/ProjectInfoDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/HWIODxe/HWIODxe.inf
@@ -46,7 +49,7 @@
   INF FatPkg/EnhancedFatDxe/Fat.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
-  #INF Binaries/marble/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  INF Binaries/marble/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
@@ -55,15 +58,16 @@
   INF Binaries/marble/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
 
-  INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
+  INF Binaries/marble//Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
 
   INF Binaries/marble/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/ICBDxe/ICBDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
+  INF Binaries/marble//Drivers/QcomBds/QcomBds.inf
+  INF Binaries/marble//Application/QcomChargerApp/QcomChargerApp.inf
+  INF MiPkg/Protocol/MiToken/MiToken.inf
 
-  INF QcomPkg/Drivers/DynamicRAMDxe/DynamicRAMDxe.inf
-
-  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+  INF Binaries/marble//Drivers/DynamicRAMDxe/DynamicRAMDxe.inf
 
   INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
   INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
@@ -99,16 +103,18 @@
 
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
-  INF MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
 
   INF Binaries/marble/QcomPkg/Drivers/UsbMsdDxe/UsbMsdDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/UsbInitDxe/UsbInitDxe.inf
+  INF Binaries/marble//Drivers/UCDxe/UCDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/RNGDxe/RngDxe.inf
-  #INF Binaries/marble/QcomPkg/Drivers/PILDxe/PILDxe.inf
+  INF Binaries/marble/QcomPkg/Drivers/PILDxe/PILDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/PILProxyDxe/PILProxyDxe.inf
+  INF Binaries/marble//Drivers/SecRSADxe/SecRSADxe.inf
+  INF Binaries/marble//Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
   INF Binaries/marble/QcomPkg/Drivers/SPSSDxe/SPSSDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/FvUtilsDxe/FvUtilsDxe.inf
   INF Binaries/marble/QcomPkg/Drivers/ParserDxe/ParserDxe.inf
